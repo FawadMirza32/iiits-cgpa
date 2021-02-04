@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CGPA Calculator</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="head">
+
+	</div>
+
+	<div class="container">
+		<div class="box-left">
+			<div class="table-store">
+				<table id="credit_grade">
+					<tr>
+						<th>Code</th>
+						<th>Credits</th>
+						<th>Grade</th>
+						<th>Option</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="box-right">
+
+			<div class="box-up">
+				<p>
+					Course 
+					<input type="text" placeholder="ADSA"
+							id="course">
+				</p>
+				<p>
+					Credits
+					<input type="text" placeholder="4" id="credit">
+				</p>
+				<p>
+					Grade
+					<input type="text" placeholder="A" id="grade"></p>
+				<input type="button" value="Add"
+				 onclick="addRow('credit_grade')"/>
+			</div>
+
+
+			<div class="box-down">
+				<p>
+					<input type="button" id="calcuate" value="Get CGPA"
+					onclick="getCGPA('credit_grade')"/>
+					<h2><p id="store-cgpa"> </p></h2>
+				</p>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
